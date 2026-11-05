@@ -33,15 +33,24 @@ public class Main {
 //        System.out.println(K); // 273.15
 
 // EJERCICIO 3
-//        System.out.println("Introduce el numero de ticks");
-//        double ticks = sc.nextDouble();
-//        int horas;
-//        double segundos = ticks / 20;
-//
-//        System.out.println(ticks + " ticks son " + segundos + " segundos");
-//
-//
-//            horas = (int)segundos / 3600;
+        System.out.println("Introduce el numero de ticks");
+        int ticks = sc.nextInt();
+        int horas;
+        int segundos = ticks / 20; // como 1 segundo son 20 ticks, dividimos el tick entre 20 para saber cuantos segundos son.
+
+        System.out.println(ticks + " ticks son " + segundos + " segundos");
+
+            horas = segundos / 3600; // dividimos los segundos entre 3600 y asi sabemos las horas
+        System.out.println(segundos + " son " + horas + " horas");
+            int segundosSobrantes = segundos % 3600; // con esto sabemos los segundos que sobran de la operacion de arriba
+        System.out.println("sobran " + segundosSobrantes + " segundos");
+            int minutos = segundosSobrantes / 60; // los segundos sobrantes los dividimos entre 60 para saber los minutos
+        System.out.println("Los segundos sobrantes " + segundosSobrantes + " son " + minutos);
+            int segundosFinales = segundosSobrantes % 60; // y una vez terminado vemos el resto de los segundos finales
+        System.out.println("El resto son " + segundosFinales);
+
+        System.out.println(horas + "h " + minutos + "min " + segundosFinales + "s");
+
 
             // las cosas de matematicas no las entiendo bien la vd, no sé como hacerlo.
             // tipo entiendo que lo que tendría que hacer realmente es
@@ -88,20 +97,20 @@ public class Main {
 
 // EJERCICIO EXTRA TICKET COMPRA
 
-        System.out.println("¿Que has comprado? ");
-        String producto = sc.nextLine();
-        System.out.println("Cuántos");
-        int cantidad = sc.nextInt();
-        System.out.println("Precio individual: ");
-        double precio = sc.nextDouble();
-
-        System.out.println("========= TICKET =========");
-        System.out.println("Producto:\t" + producto);
-        System.out.println("Cantidad:\t" + cantidad);
-        System.out.println("Subtotal:\t" + precio);
-        System.out.println("IVA (21%):\t" + (precio * 1.21 - precio));
-        System.out.println("TOTAL:\t\t" + precio * 1.21);
-
-        System.out.println("===========================");
+//        System.out.println("¿Que has comprado? ");
+//        String producto = sc.nextLine();
+//        System.out.println("Cuántos");
+//        int cantidad = sc.nextInt();
+//        System.out.println("Precio individual: ");
+//        double precio = sc.nextDouble();
+//
+//        System.out.println("========= TICKET =========");
+//        System.out.println("Producto:\t" + producto);
+//        System.out.println("Cantidad:\t" + cantidad);
+//        System.out.println("Subtotal:\t" + precio);
+//        System.out.println("IVA (21%):\t" + (precio * 1.21 - precio));
+//        System.out.println("TOTAL:\t\t" + precio * 1.21);
+//
+//        System.out.println("===========================");
     }
 }
