@@ -55,7 +55,7 @@ public class Main {
 //        System.out.println(horas + "h " + minutos + "min " + segundosFinales + "s");
 
 // EJERCICIO 4
-        System.out.println("Dime el radio del triángulo rectangulo");
+        System.out.println("Dime el radio de un círculo");
         double radio = sc.nextDouble();
         System.out.println("Dime el cateto 1 del triángulo rectangulo");
         double cateto1 = sc.nextDouble();
@@ -64,9 +64,11 @@ public class Main {
 
         double area = Math.PI * Math.pow(radio, 2);
         double perimetro = 2 * Math.PI * radio;
-        double hipotenusa = Math.sqrt((Math.pow(cateto1,2) * Math.pow(cateto1, 2)));
+        double hipotenusa = Math.sqrt((Math.pow(cateto1,2) + Math.pow(cateto2, 2)));
 
         System.out.println("Area: " + area);
+        System.out.println("Area redondeada 1: " + Math.round(area));
+        System.out.println("Area redondeada 2: " + Math.ceil(area));
         System.out.println("Perimetro: " + perimetro);
         System.out.println("Hipotenusa: " + hipotenusa);
 // y aqui un tanto de lo mismo, las formulas me las sé (las miré en google), pero no veas con el ejercicio xd
