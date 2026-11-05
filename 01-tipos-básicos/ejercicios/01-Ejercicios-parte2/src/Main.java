@@ -33,40 +33,42 @@ public class Main {
 //        System.out.println(K); // 273.15
 
 // EJERCICIO 3
-        System.out.println("Introduce el numero de ticks");
-        int ticks = sc.nextInt();
-        int horas;
-        int segundos = ticks / 20; // como 1 segundo son 20 ticks, dividimos el tick entre 20 para saber cuantos segundos son.
-
-        System.out.println(ticks + " ticks son " + segundos + " segundos");
-
-            horas = segundos / 3600; // dividimos los segundos entre 3600 y asi sabemos las horas
-        System.out.println(segundos + " son " + horas + " horas");
-            int segundosSobrantes = segundos % 3600; // con esto sabemos los segundos que sobran de la operacion de arriba
-        System.out.println("sobran " + segundosSobrantes + " segundos");
-            int minutos = segundosSobrantes / 60; // los segundos sobrantes los dividimos entre 60 para saber los minutos
-        System.out.println("Los segundos sobrantes " + segundosSobrantes + " son " + minutos);
-            int segundosFinales = segundosSobrantes % 60; // y una vez terminado vemos el resto de los segundos finales
-        System.out.println("El resto son " + segundosFinales);
-
-        System.out.println(horas + "h " + minutos + "min " + segundosFinales + "s");
-
-
-            // las cosas de matematicas no las entiendo bien la vd, no sé como hacerlo.
-            // tipo entiendo que lo que tendría que hacer realmente es
-            // tener las horas, una vez tengo las horas en caso de que sea 1 o más, se resta y pasamos a cuantos minutos quedan y así
+//        System.out.println("Introduce el numero de ticks");
+//        int ticks = sc.nextInt();
+//        int horas;
+//        int segundos = ticks / 20; // como 1 segundo son 20 ticks, dividimos el tick entre 20 para saber cuantos segundos son.
+//
+//        System.out.println(ticks + " ticks son " + segundos + " segundos");
+//
+//        horas = segundos / 3600; // dividimos los segundos entre 3600 y asi sabemos las horas
+//        System.out.println(segundos + " son " + horas + " horas");
+//
+//        int segundosSobrantes = segundos % 3600; // con esto sabemos los segundos que sobran de la operacion de arriba
+//        System.out.println("sobran " + segundosSobrantes + " segundos");
+//
+//        int minutos = segundosSobrantes / 60; // los segundos sobrantes los dividimos entre 60 para saber los minutos
+//        System.out.println("Los segundos sobrantes " + segundosSobrantes + " son " + minutos);
+//
+//        int segundosFinales = segundosSobrantes % 60; // y una vez terminado vemos el resto de los segundos finales
+//        System.out.println("El resto son " + segundosFinales);
+//
+//        System.out.println(horas + "h " + minutos + "min " + segundosFinales + "s");
 
 // EJERCICIO 4
-//        System.out.println("Dime el radio del triángulo rectangulo");
-//        double radio = sc.nextDouble();
-//        System.out.println("Dime el cateto 1 del triángulo rectangulo");
-//        double cateto1 = sc.nextDouble();
-//        System.out.println("Dime el cateto 2 del triángulo rectangulo");
-//        double cateto2 = sc.nextDouble();
-//
-//        double area = (cateto1 * cateto2) / 2;
-//        double hipotenusa = Math.sqrt(Math.pow(cateto1, cateto2));
-//        System.out.println(hipotenusa);
+        System.out.println("Dime el radio del triángulo rectangulo");
+        double radio = sc.nextDouble();
+        System.out.println("Dime el cateto 1 del triángulo rectangulo");
+        double cateto1 = sc.nextDouble();
+        System.out.println("Dime el cateto 2 del triángulo rectangulo");
+        double cateto2 = sc.nextDouble();
+
+        double area = Math.PI * Math.pow(radio, 2);
+        double perimetro = 2 * Math.PI * radio;
+        double hipotenusa = Math.sqrt((Math.pow(cateto1,2) * Math.pow(cateto1, 2)));
+
+        System.out.println("Area: " + area);
+        System.out.println("Perimetro: " + perimetro);
+        System.out.println("Hipotenusa: " + hipotenusa);
 // y aqui un tanto de lo mismo, las formulas me las sé (las miré en google), pero no veas con el ejercicio xd
 
 // EJERCICIO 5
